@@ -1,0 +1,25 @@
+@import '_variables';
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Smooch&display=swap');
+
+section{
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(255, 255, 255);
+  padding-bottom: 15px;
+  font-size: 2em;
+  font-weight: 700;
+  width: 100%;
+  margin: 0px;
+  background-color: $card-back;
+  align-content: center;
+  justify-content: space-between;
+  text-align: justify;
+  align-items: center;
+  color: rgb(255, 255, 255);
+
+  p{
+    margin-left: 20px;
+    font-family: 'Kaushan Script';
+    font-size: 1em;
+  }
+}

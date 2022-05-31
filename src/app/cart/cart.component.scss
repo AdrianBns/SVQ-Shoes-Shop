@@ -1,0 +1,44 @@
+@import '../sass/variables';
+
+.order-info{
+
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  font-size: 1.2em;
+
+  .order-total{
+    margin-left: 15%;
+    border-radius: 40px;
+    flex-basis: 35%;
+    width: 100%;
+    height: 100%;
+    background-color: $card-back;
+    color: $text;
+
+    .btn-to-home{
+        margin: 20px;
+        background-color: $alternative;
+        color: $text;
+        border: none;
+        width: 130px;
+        height: 40px;
+        font-size: 1em;
+        font-weight: 500;
+        border-radius: 30px;
+
+    }
+
+  }
+  .shipping-info{
+    margin-left: -10%;
+    flex-basis: 65%;
+    width: 100%;
+    height: 100%;
+  }
+}

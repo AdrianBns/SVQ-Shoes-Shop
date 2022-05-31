@@ -1,0 +1,31 @@
+<section class="card" >
+  <div class="product-card" [class.selected]="item.selected">
+    <div class="image">
+      <button *ngIf="editMode" class="edit-card-btn" (click)="navigateToEditPage(item)" ><mat-icon inline="true">edit</mat-icon></button>
+      <img [src]="item.image" alt="{{item.image}}">
+    </div>
+    <div class="text">
+      <div class="title-container">
+        <h2> {{item.name | uppercase}} </h2>
+      </div>
+      <div class="item-description" >
+        <p  ngDefaultControl> {{item.description }} </p>
+        <div class="contador">
+          <button class="btn-discount" (click)="downQuantity(item)">-</button>
+          <input type="number" max-length="2" id="quantity" placeholder="0" [(ngModel)]="item.quantity" (change)="checkQuantity(item)" >
+          <button class="btn-amount" (click)="upQuantity(item)">+</button>
+        </div>
+      </div>
+      <div class="stockprice">
+        <p> <strong> {{item.price | currency:'EUR':'symbol':'1.1-1'}}</strong> </p>
+        <p *ngIf="item.stock > 0"> <strong>{{item.stock}} in Stock</strong></p>
+        <p *ngIf="item.stock === 0"class="outOfStock"> <strong>Out of stock </strong></p>
+      </div>
+      <div class="cart-btn">
+
+        <button class="add-to-cart" (click)="emitCart(item)"> <mat-icon class="cart"inline="true" >shopping_cart</mat-icon>Add to Cart</button>
+      </div>
+      <button *ngIf="editMode" class="deleteItem" (click)="emitDelete(item)"><mat-icon inline="true">delete_forever</mat-icon></button>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,102 @@
+{
+  "item-list": [
+    {
+      "id": 1,
+      "name": "Cenicero clásico",
+      "price": 12.5,
+      "description": "Disfruta tu puro habano junto al glorioso",
+      "stock": "25",
+      "image": "../assets/betis_cenicero.jpg",
+      "selected": false,
+      "quantity": 0,
+      "editDescription": false,
+      "mode": 1,
+      "icon": false
+    },
+    {
+      "id": 2,
+      "name": "Palmerin",
+      "price": 22.5,
+      "description": "La mascota de tu equipo ahora en formato moñeco",
+      "stock": 120,
+      "image": "../assets/palmerin.jpg",
+      "selected": false,
+      "quantity": 0,
+      "editDescription": true,
+      "mode": 1,
+      "icon": false
+    },
+    {
+      "id": 3,
+      "name": "El Palo",
+      "price": 12000.985,
+      "description": "El verdadero palo de PVC que acabo con un derbi ",
+      "stock": 1,
+      "image": "../assets/palo_jordan.jpg",
+      "selected": false,
+      "quantity": 0,
+      "editDescription": true,
+      "mode": 1,
+      "icon": false
+    },
+    {
+      "id": 4,
+      "name": "Traje Emilio TuSi",
+      "price": 109.985,
+      "description": "El auténtico traje de Bellerín en la Feria. Se regala bote de 1L de Baron Dandy",
+      "stock": 3,
+      "image": "../assets/traje_bellerin.jpg",
+      "selected": false,
+      "quantity": 0,
+      "editDescription": false,
+      "mode": 1,
+      "icon": false
+    },
+    {
+      "id": 5,
+      "name": "Cabra Betis",
+      "price": 600,
+      "description": "Con ustede, la cabra bética",
+      "stock": 0,
+      "image": "../assets/cabra.jpg",
+      "selected": false,
+      "quantity": 0,
+      "editDescription": false,
+      "mode": 1,
+      "icon": false
+    },
+    {
+      "name": "Auténtico Pan bético",
+      "description": "Masa madre. 24 horas de reposo. Horno de leña. Que empape",
+      "stock": "1",
+      "price": "68.95",
+      "image": "../assets/pan.jpg",
+      "editDescription": false,
+      "quantity": 0,
+      "selected": false,
+      "id": 6
+    },
+    {
+      "name": "Er shico Denirson",
+      "description": "Se lo quitamo al Madrí, y ahora no nos lo quiere quitá naide",
+      "stock": "1",
+      "price": "32000000",
+      "image": "../assets/denilson.jpg",
+      "editDescription": false,
+      "quantity": 0,
+      "selected": false,
+      "id": 7
+    },
+    {
+      "name": "Cigarros oculares",
+      "description": "Evita el cáncer de garganta a cambio de un ojo",
+      "stock": "200",
+      "price": "5.5",
+      "image": "../assets/fuma_ojo.jpg",
+      "editDescription": false,
+      "quantity": 0,
+      "selected": false,
+      "id": 8
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+<section>
+  <div>
+    <form class="form-new" >
+      <p>Formulario de creación de objetos</p>
+      <label for="" name="nombre">Nombre</label>
+      <input type="text" name="nombre" placeholder="nombre" [(ngModel)]="item.name" ><br>
+      <label for="" name="description">Descripción</label>
+      <input type="text" name="description"placeholder="Descripción" [(ngModel)]="item.description"><br>
+      <label for="" name="stock">Stock</label>
+      <input type="text" name="stock" placeholder="Stock" [(ngModel)]="item.stock"><br>
+      <label for="" name="price">Precio</label>
+      <input type="" name="price" placeholder="Precio" [(ngModel)]="item.price"><br>
+      <label for="" name="image">Imagen</label>
+      <input type="" name="image" placeholder="Imagen" [(ngModel)]="item.image"><br>
+      <div class="btn">
+        <input class="btn-form" type="button"  value="Volver" (click)="navigateToItemList()">
+        <input class="btn-form-create" type="button" value="Crear Item" (click)="emitEditItem(item)" >
+      </div>
+    </form>
+  </div>
+</section>
+

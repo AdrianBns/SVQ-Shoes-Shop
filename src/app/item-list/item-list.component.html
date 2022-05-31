@@ -1,0 +1,29 @@
+<section>
+
+<div class="title">
+  <!-- <p>Total de stock {{myItems | total:'stock'}} </p>
+  <p>Total de precios {{myItems | total:'price' | currency:'EUR':'symbol':'1.1-1'}} </p>
+  -->
+</div>
+
+<div>
+  <div class="headers-options">
+    <button class="header-btn" (click)="navigateToItemList()">New Item</button>
+    <button class="header-btn" (click)="editModeOn()">Editar</button>
+    <div class="cart">
+      <mat-icon class="cart-icon"inline="true" (click)="navigateToCart()">shopping_cart</mat-icon>
+      <p>{{cartQuantity}}</p>
+    </div>
+  </div>
+
+
+
+
+<section id="elements-list" >
+  <app-item   *ngFor="let item of myItems" [editMode]="editMode"  [item]="item" [editMode]="editMode" (itemCart)="pushItemToCart($event)" (itemDeleted)="deleteItem($event)" (itemUpdated)="updateItem($event)" (mouseover)="mouseOver(item)"  (mouseout)="mouseOver(item)"></app-item>
+</section>
+
+
+
+</div>
+</section>

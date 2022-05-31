@@ -1,0 +1,16 @@
+
+<form *ngIf="editCard" class="form-edit" >
+  <p>Formulario de actualización de objetos</p>
+  <label for="" name="nombre">Nombre</label>
+  <input type="text" name="nombre" placeholder="nombre" [(ngModel)]="itemToEdit.name" ><br>
+  <label for="" name="description">Descripción</label>
+  <input type="text" name="description"placeholder="Descripción" [(ngModel)]="itemToEdit.description"><br>
+  <label for="" name="stock">Stock</label>
+  <input type="text" name="stock" placeholder="Stock" [(ngModel)]="itemToEdit.stock"><br>
+  <label for="" name="price">Precio</label>
+  <input type="" name="price" placeholder="Precio" [(ngModel)]="itemToEdit.price"><br>
+  <label for="" name="image">Imagen</label>
+  <input type="" name="image" placeholder="Imagen" [(ngModel)]="itemToEdit.image"><br>
+  <label for="" name="button">Crear</label>
+  <input class="btn-form"type="button" value="Crear Item" (click)="editItem(itemToEdit)">
+</form>

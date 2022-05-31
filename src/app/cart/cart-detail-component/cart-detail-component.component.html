@@ -1,0 +1,24 @@
+<section class="cart-section">
+  <div *ngFor="let items of cart.items" class="items-cart-container">
+    <div class="cart-card">
+      <div class="product-image">
+        <img src="{{items.image}}" alt="">
+      </div>
+      <div class="card-info">
+        <div class="item-info">
+          <p class="item-name">{{items.name}}</p>
+          <div class="item-description">
+            <p class="item-price">Precio del artículo: {{items.price | currency: 'EUR':true}}  </p>
+            <p class="item-quantity">Cantidad: {{items.quantity}}</p>
+            <p class="total">Total: {{(items.price * items.quantity) | currency: 'EUR':true}}</p>
+          </div>
+        </div>
+        <div class="btn">
+          <button class="btn-remove" (click)="emitRemoveItem(items)">Remove</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</section>

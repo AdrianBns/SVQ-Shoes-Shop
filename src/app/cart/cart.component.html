@@ -1,0 +1,9 @@
+<section>
+
+  <app-cart-detail-component [cart]="cart" (removeItem)="removeItemFromCart($event)"></app-cart-detail-component>
+
+  <app-shipping-component [cartLength]="cartLength" [user]="user" [cartTotalQuantity]="cartTotalQuantity" [cartTotalPrice]="cartTotalPrice" class="shipping-info" (ngSubmit)="formUser($event)" ></app-shipping-component>
+
+
+
+</section>

@@ -1,0 +1,22 @@
+<div class="order-info">
+  <div class="order-total">
+    <div *ngIf="cartTotalQuantity === 0">
+      <p> ¡Carrito vacío!</p>
+      <p>Prueba a visitar nuestra tienda y conocer nuestros productos</p>
+      <button class="btn-to-home" (click)="navigateToShop()">Ir a la tienda</button>
+    </div>
+    <p *ngIf="cartTotalQuantity != 0">Subtotal ({{cartTotalQuantity}} productos): <strong>{{cartTotalPrice | currency: 'EUR':true}}</strong>   </p>
+  </div>
+  <div class="user-form">
+    <form [formGroup]="form" class="form" (ngSubmit)="onSubmit(form.value)">
+      <label>Nombre</label>
+      <input type="text" placeholder="Tu nombre" formControlName="nombre" [(ngModel)]="user.nombre">
+      <label>Dirección</label>
+      <input type="text" placeholder="Tu direccion" formControlName="direccion"  [(ngModel)]="user.direccion">
+      <label>Email</label>
+      <input type="text" placeholder="Ej: prueba@prueba.com" formControlName="email"  [(ngModel)]="user.email">
+      <button type="submit"class="btn-send" name="btn-send" [disabled]="!form.valid">Realizar pedido</button>
+    </form>
+  </div>
+</div>
+

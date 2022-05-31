@@ -1,0 +1,96 @@
+@import '../../sass/variables';
+
+.user-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  border: 1.5px solid rgba(112, 112, 112, 0.473);
+  margin-top: 5%;
+  width: 40%;
+  height: 30%;
+  padding: 25px;
+  margin:auto;
+  background-color: $card-back;
+  color: $text;
+
+  .form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    text-align: center;
+
+    input{
+      color: $text;
+      background-color: $inside-option;
+      width: 100%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      height: 25px;
+      border: none;
+      border-radius: 2px;
+      text-align: center;
+    }
+    .btn-send{
+      display: flex;
+      align-self: center;
+      background-color: $alternative;
+      color:white;
+      border: none;
+      border-radius: 30px;
+      height: 35px;
+      flex-direction: row;
+      font-size: 1em;
+      justify-content: space-around;
+      width: 150px;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+    }
+    .btn-send[disabled]{
+      background-color: #e9c62a4b;
+    }
+
+  }
+
+
+
+}
+.order-info{
+
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  font-size: 1.2em;
+
+  .order-total{
+    margin-left: 15%;
+    border-radius: 40px;
+    flex-basis: 35%;
+    width: 100%;
+    height: 100%;
+    background-color: $card-back;
+    color: $text;
+
+    .btn-to-home{
+        margin: 20px;
+        background-color: $alternative;
+        color: $text;
+        border: none;
+        width: 130px;
+        height: 40px;
+        font-size: 1em;
+        font-weight: 500;
+        border-radius: 30px;
+        text-align: center;
+
+    }
+
+  }
+}
