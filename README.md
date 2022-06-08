@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
 
-![[(https://i.imgur.com/Ab2spgX.png)](https://i.imgur.com/Ab2spgX.png)]
+![imagen](https://i.imgur.com/Ab2spgX.png)
 
 This is a concepto of a shoes shop based on Angular.
 
